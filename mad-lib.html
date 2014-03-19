@@ -39,8 +39,9 @@
     var span = document.getElementById(id);
     var word = prompt('Please enter a ' + span.innerHTML);
     span.innerHTML = word;
+    span.addEventListener('click', replaceWord, false);
 }
-    /*
+   
   
         document.getElementById('number').innerHTML  = prompt('[1/6] Enter a number');
 document.getElementById('name-1').innerHTML  = prompt('[2/6] Enter a name');
