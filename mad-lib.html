@@ -15,22 +15,33 @@
         </style>
     </head>
     <body>
-    <p>In <span id="number">(number)</span> years from now,<span id="name-1">(name)</span>
+   
+   
+   <p> In <span id="number">(number)</span> years from now,<span id="name-1">(name)</span>
         and <span id="name-2">(name)</span> will rule <span id="company">(company)</span>,
-        because they discovered the<span id="noun">(noun)</span> was made to <span id="place">(place)</span>.</p>
-        <script>
+        because they discovered the<span id="noun">(noun)</span> was made to <span id="verb">(verb)</span>.</p>
+        </p>
+        
+       
     <script>
-    /*
-   for (var i = 0; i < placeholders.length; i++) {
-    var id = placeholders[i];
-    console.log(id); { var placeholders = [
-    // TODO: add placeholder words 'number',
+    
+    var placeholders = [
+    'number',
     'name-1',
     'name-2',
     'company',
     'noun',
-    'place'
-]; }
+    'verb'
+];
+    
+    for (var i = 0; i < placeholders.length; i++) {
+     var id = placeholders[i];
+    var span = document.getElementById(id);
+    var word = prompt('Please enter a ' + span.innerHTML);
+    span.innerHTML = word;
+}
+    /*
+  
         document.getElementById('number').innerHTML  = prompt('[1/6] Enter a number');
 document.getElementById('name-1').innerHTML  = prompt('[2/6] Enter a name');
 document.getElementById('name-2').innerHTML  = prompt('[3/6] Enter a name');
