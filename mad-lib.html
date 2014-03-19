@@ -24,23 +24,6 @@
         
        
     <script>
-    
-    var placeholders = [
-    'number',
-    'name-1',
-    'name-2',
-    'company',
-    'noun',
-    'verb'
-];
-    
-    for (var i = 0; i < placeholders.length; i++) {
-     var id = placeholders[i];
-    var span = document.getElementById(id);
-    var word = prompt('Please enter a ' + span.innerHTML);
-    span.innerHTML = word;
-    span.addEventListener('click', replaceWord, false);
-}
    
   
         document.getElementById('number').innerHTML  = prompt('[1/6] Enter a number');
@@ -50,7 +33,7 @@ document.getElementById('company').innerHTML = prompt('[4/6] Enter a place');
 document.getElementById('noun').innerHTML    = prompt('[5/6] Enter a noun');
 document.getElementById('place').innerHTML   = prompt('[6/6] Enter a verb');
      
-         */
+        
      </script>
     </body>
 </html>
